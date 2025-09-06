@@ -20,7 +20,6 @@ export default function LoginPage() {
     );
 
     if (user) {
-      
       localStorage.setItem("currentUser", JSON.stringify(user));
       router.push("/"); // redirect to home
     } else {
@@ -62,7 +61,7 @@ export default function LoginPage() {
         </button>
 
         <p className="text-gray-400 text-center">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <span
             className="text-blue-400 cursor-pointer hover:underline"
             onClick={() => router.push("/signup")}
