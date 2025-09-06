@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini Event Management System
 
+Live Demo: [https://amarpay.vercel.app/](https://amarpay.vercel.app/)
+
+This is a **Mini Event Management System** built with **Next.js**, **React 18**, and **TailwindCSS**. Users can view, create, search, and manage events. The project demonstrates a full workflow from data fetching and routing to form handling and state management.
+
+---
+
+## Features
+
+- View upcoming events with title, date, location, and category.
+- Create a new event via a form.
+- Filter events by category and search by title.
+- View detailed information for each event (dynamic route `/events/[id]`).
+- Manage your own events: view, delete (stored in `localStorage`).
+- Bonus features:
+  - RSVP button to track attendees.
+  - Edit events (optional).
+- Fully responsive design.
+
+---
+
+## Task Modules Implemented
+
+### Module 1: Project Setup & Layout
+- Next.js app with simple layout (Header + Main content).
+- Header navigation: **Home | Create Event | My Events**
+- ✅ Evaluates: project setup, layout structure, navigation
+
+### Module 2: Event List (Home Page)
+- Display list of events (mock API / hardcoded JSON).
+- Added search bar (filter by title) and category filter.
+- ✅ Evaluates: data fetching, filtering, conditional rendering
+
+### Module 3: Event Details Page
+- Dynamic route `/events/[id]` to show event details: title, description, date, location, category.
+- ✅ Evaluates: Next.js dynamic routing, SSR/CSR understanding
+
+### Module 4: Create Event Page
+- Form for creating events: title, description, date, location, category.
+- Form submission updates local state (`localStorage`) and redirects to **My Events** page.
+- ✅ Evaluates: forms, controlled components, validation
+
+### Module 5: My Events Page
+- Display only events created by the user.
+- Delete functionality for user events.
+- ✅ Evaluates: state management, CRUD basics
+
+---
+
+## Bonus Implementations
+- RSVP button to track attendees.
+- Event editing (optional).
+- Deployed to Vercel ([Live Link](https://amarpay.vercel.app/)).
+
+---
+
+## Tech Stack
+
+- **Frontend:** React 18, Next.js 15.x, TailwindCSS
+- **State Management:** Local state (`useState`), `localStorage` for persistence
+- **Routing:** Next.js dynamic routing (`/events/[id]`)
+- **Components:** Modular React components for reusability
+- **Deployment:** Vercel
+
+---
+
+## Evaluation Criteria Covered
+
+✅ Clean, modular code with reusable components  
+✅ Correct use of Next.js features (routing, API routes, data fetching)  
+✅ State management (local state & persistence)  
+✅ UI/UX: responsive design, form handling, error states  
+✅ Documentation: this README, setup steps  
+
+---
+ 
+## Extra things 
+✅ Login Logout implemented
+✅ Weather alert implemented
+---
+  
 ## Getting Started
 
-First, run the development server:
+1. Clone the repo:
 
 ```bash
-npm run dev
+git clone <https://github.com/systemadmin-lab/amarpay>
+cd <my-app>
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+yarn install
