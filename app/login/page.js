@@ -21,7 +21,7 @@ export default function LoginPage() {
 
     if (user) {
       localStorage.setItem("currentUser", JSON.stringify(user));
-      router.push("/my-event"); // redirect to home
+      router.push("/my-event"); // redirect to my event
     } else {
       setError("⚠️ Invalid username or password");
     }
