@@ -76,7 +76,7 @@ This is a **Mini Event Management System** built with **Next.js**, **React 18**,
 ---
  
 ## Extra things 
-✅ Login Logout implemented
+✅ Login Logout implemented with help of local storage
 ✅ Weather alert implemented
 ---
   
