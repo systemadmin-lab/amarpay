@@ -20,7 +20,7 @@ export default function LoginPage() {
     );
 
     if (user) {
-      // পুরো user object save করা
+      
       localStorage.setItem("currentUser", JSON.stringify(user));
       router.push("/"); // redirect to home
     } else {
